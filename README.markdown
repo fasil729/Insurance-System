@@ -1,65 +1,69 @@
-# Home-Rental
-a flutter application for home rental system
-
-Group Members:<br>
-    
-   Fasika Fikadu  ******* UGR/9597/13      *******   Section:  3 
-   
-   Deribew Shemelis  ******* UGR/5307/13   *******     Section:1  
-   
-   Enyew Anberbir    *******     UGR/9324/13	 *******   Section:1
-   
-   Kaleab Tibebu    *******       UGR/2979/13    *******   Section:1   
-   
-   Rahel Solomon     *******     UGR/9946/13     *******   Section:3
-   </pre>
-   
-   
-   Description
-   
-   our Flutter application for the home rental system allows tenants to create a profile and post their available rental properties. They can upload pictures, add descriptions, specify rental rates, and provide their contact information for interested subtenants to reach out to them.
-   
-On the other hand, subtenants can create their own profile and browse through the available rental properties. They can use search filters to narrow down their options based on factors such as location, price, and size. Once they find a property that suits their needs, they can contact the tenant directly through the provided contact information and arrange a viewing or any other necessary details.
-
-The application will not handle payment transactions, but it will connect the tenant and subtenant by providing contact information. Essentially, the application acts as a mediator between tenants and subtenants, facilitating the rental process but leaving the actual rental transaction to be handled outside of the application.
-
-The application will also include a review system that allows tenants to express what they think about the house. This feature can be particularly useful for other subtenants.
-
-To ensure that the application is secure, we will implement authentication mechanisms such as username and password login. we will also include features such as rating and review systems, where users can rate their experience with subtenants.
-
-As for the user interface, our Flutter application will be designed to be user-friendly and intuitive. It will have a clean and modern layout that allows users to easily navigate through the various features. we will use appealing colors, icons, and graphics to make the application visually appealing and engaging for users.
-
-Overall, our Flutter application for the home rental system will serve as a convenient and efficient platform for tenants and subtenants to connect and facilitate the rental process.
-
-
-# Updated Project Title
-
 # Insurance Management System
 
-a flutter application for Insurance Management System
+## Table of Contents
 
-| No |   Group Members  |     ID      | Section |
-| -- | ---------------- | ----------- | ------- |
-| 1  |  Enyew Anberbir  | UGR/9324/13 |     1   |
-| 2  | Deribew Shemelis | UGR/5307/13 |     1   |
-| 3  |  Rahel Solomon   | UGR/9946/13 |     3   |
-| 4  |  Fasika Fikadu   | UGR/9597/13 |     3   |
-| 5  |  Kaleab Tibebu   | UGR/2979/13 |     1   |
+- [Description](#description)
+- [Technologies](#technologies)
+- [Features](#features)
+- [Security](#security)
+- [User Interface](#user-interface)
+- [Future Considerations](#future-considerations)
+- [How to Use](#how-to-use)
 
-Description
+## Description
 
-Our Insurance Management system is a flutter appication that helps to protect the User or people against financial loss. The System helps the users in managing cash flow uncertainty when paying capacity at the time of losses is reduced significantly and decrease payment of losses that occur during the problem or acciedent on the items.
+The Insurance Management System is a Flutter application that helps protect users or people against financial loss. It assists in managing cash flow uncertainty when the capacity to pay at the time of losses is significantly reduced, and it decreases the payment of losses that occur during problems or accidents on insured items.
 
-First, The User register on the Insurance management System, then the user add an Items to Insurance property lists to get an Insurance on the Items, after that the user pay a monthly premium amount of money according to the items. If User get an accident or problem on the item, User send a request to the system to announce the situation and the Insurance system can send an Insurance payment to cover the user payment loss.
+The system allows users to register and add items to the insurance property list in order to obtain insurance coverage for those items. Users then pay a monthly premium based on the insured items. In the event of an accident or problem with an item, users can submit a request to the system to report the situation, and the insurance system can process an insurance payment to cover the user's loss.
 
-In the Insurance Management System, The user can add items to the Insurance property lists to get Insurance on the properties, If the user wants to decrease the items, User can remove items from the Insurance property list, The User can also update the items and view or read items on the system.
+## Technologies
 
-on the other hand, The User can send a request to the Insurance system to get Insurance Payment when the User get a problem or accident on the Items registered in Insurance property list. The user can remove the request , Update the request and also view or read the requests.
+- Frontend: Flutter, Dart
+- State Management: BLoC (Business Logic Component)
+- Architecture: Domain-Driven Design (DDD)
+- Backend: Node.js, Nest.js
+- Database: MySQL
+- Middleware: Multer, JWT (JSON Web Tokens)
 
-Moreover, approval of requests by Admin and notification for monthly payment upon individual insurance property are other features that Insurance Management System Provides
+## Features
 
-To ensure that the application is secure, we will implement authentication mechanisms such as username and password login. we will also include different verification methods on the Items provided by the user to check whether the given Items are legal or not.
+- User registration and personal profile creation
+- Adding items to the insurance property list for coverage
+- Removing and updating items in the insurance property list
+- Viewing and reading items in the system
+- Requesting insurance payment for accidents or problems with insured items
+- Modifying and removing insurance payment requests
+- Admin approval of insurance purchases
+- Monthly payment notifications
+- Testing functionalities: unit testing, widget testing, integration testing
 
-As for the user interface, our Flutter application will be designed to be user-friendly and intuitive. It will have a clean and modern layout that allows users to easily navigate through the various features. we will use appealing colors, icons, and graphics to make the application visually appealing and engaging for users.
+## Security
 
-Overall, our Flutter application for the Insurance Management System will serve as a convenient and efficient platform  enables Users or people  to concentrate on their work by providing security and financial aid against risk and accidents on the Items.
+The application ensures security through authentication mechanisms, including username and password login. Verification methods are implemented to validate the legality of the provided items.
+
+## User Interface
+
+The Flutter application's user interface is designed to be user-friendly and intuitive. It features a clean and modern layout that allows easy navigation through the various features. The application utilizes appealing colors, icons, and graphics to provide a visually appealing and engaging experience for users.
+
+## Future Considerations
+
+In future iterations, the system can be extended to cover other utilities beyond homes, such as cars, etc.
+
+## How to Use
+
+1. Clone this repository to your local machine.
+1. Open the backend directory (`cd backend`), set the database URL in the `.env` file, and run `npm install`. Then start the backend server using `yarn start:dev`.
+1. Open the frontend directory (`cd frontend`), run `flutter pub get`, and start the Flutter application using `flutter start`.
+
+Ensure that you have the necessary dependencies and configurations set up to run the application successfully.
+
+Please note that this README provides an overview of the system and its functionalities. For detailed instructions and documentation, refer to the codebase and relevant files within the repository.
+
+| No |   Group Name     |     role                          |
+| -- | ---------------- | --------------------------------- |
+| 1  |  Fasika Fikadu   | Backend Developer and Integration | 
+| 2  | Deribew Shemelis | Backend Developer                 |
+| 3  |  Rahel Solomon   | Frontend Developer                | 
+| 4  |  Enyew Anberbir  | Frontend Developer and Integration|
+| 5  |  Kaleab Tibebu   | Frontend Developer                |
+
